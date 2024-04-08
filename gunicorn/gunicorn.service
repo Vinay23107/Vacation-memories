@@ -6,7 +6,7 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/vacation
-ExecStart=/home/ubuntu/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/vacation/vacation/vacation.sock vacation.wsgi:application
+ExecStart=gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/vacation/vacation/vacation.sock vacation.wsgi:application
 
        
 [Install]
