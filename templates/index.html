@@ -17,7 +17,7 @@
         <!-- HEADER-->
         <header>
             <h1 style="display: flex; flex-direction: row;justify-content: space-between;">
-                <span class="html"><a style="text-decoration: none;color: inherit;" href="{% url 'index'%}">Vacation Memories</a></span><div>  
+                <span class="html"><a style="text-decoration: none;color: inherit;" href="{% url 'index'%}"> My Memories</a></span><div>  
                     {% if request.user.is_authenticated %}
 
                     <span class="css"><a style="color: aliceblue;" href="{% url 'my_album' %}" >My Album</a>&nbsp;&nbsp;&nbsp;</span> <a style="color: aliceblue;" href="{% url 'logout' %}" >Logout</a></div>
